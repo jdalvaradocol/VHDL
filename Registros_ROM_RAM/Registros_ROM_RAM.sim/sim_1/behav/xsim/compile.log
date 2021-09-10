@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Cloud/OneDrive - Universidad de Cundinamarca/Programacion/VIVADO/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Cloud/OneDrive - Universidad de Cundinamarca/Programacion/VIVADO/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ROM'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Cloud/OneDrive - Universidad de Cundinamarca/Programacion/VIVADO/Registros_ROM_RAM/Registros_ROM_RAM.srcs/sources_1/new/Registros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registros'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Cloud/OneDrive - Universidad de Cundinamarca/Programacion/VIVADO/Registros_ROM_RAM/Registros_ROM_RAM.srcs/sources_1/new/operacion.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'operacion'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Cloud/OneDrive - Universidad de Cundinamarca/Programacion/VIVADO/Registros_ROM_RAM/Registros_ROM_RAM.srcs/sources_1/new/unidad_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'unidad_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Cloud/OneDrive - Universidad de Cundinamarca/Programacion/VIVADO/Registros_ROM_RAM/Registros_ROM_RAM.srcs/sim_1/new/Registros_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Registros_tb'
