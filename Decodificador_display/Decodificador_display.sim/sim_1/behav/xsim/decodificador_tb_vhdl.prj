@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Decodificador_display.srcs/sources_1/new/Decodificador.vhd" \
+"../../../../Decodificador_display.srcs/sources_1/new/display_opc_A.vhd" \
+"../../../../Decodificador_display.srcs/sources_1/new/display_opc_B.vhd" \
+"../../../../Decodificador_display.srcs/sources_1/new/display_opc_C.vhd" \
+"../../../../Decodificador_display.srcs/sources_1/new/display_opc_D.vhd" \
+"../../../../Decodificador_display.srcs/sim_1/new/decodificador_tb.vhd" \
+
+# Do not sort compile order
+nosort
