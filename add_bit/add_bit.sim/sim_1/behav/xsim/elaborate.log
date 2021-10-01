@@ -1,0 +1,15 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto e6119a3e5d44484880e6238a42e1e4aa --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot add_bit_tb_behav xil_defaultlib.add_bit_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.add_bit [add_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.add_bit_tb
+Built simulation snapshot add_bit_tb_behav

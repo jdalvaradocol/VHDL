@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Oct  1 17:33:33 2021
+# Process ID: 9016
+# Current directory: E:/Cloud/OneDrive - Universidad de Cundinamarca/Programacion/VIVADO/Arquitectura_4bits_UC/Arquitectura_4bits.runs/synth_1
+# Command line: vivado.exe -log arquitectura.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arquitectura.tcl
+# Log file: E:/Cloud/OneDrive - Universidad de Cundinamarca/Programacion/VIVADO/Arquitectura_4bits_UC/Arquitectura_4bits.runs/synth_1/arquitectura.vds
+# Journal file: E:/Cloud/OneDrive - Universidad de Cundinamarca/Programacion/VIVADO/Arquitectura_4bits_UC/Arquitectura_4bits.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source arquitectura.tcl -notrace

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Sep 10 13:13:51 2020
+# Process ID: 13920
+# Current directory: D:/Google Drive/VIVADO/sumador_4bits/sumador_4bits.runs/impl_1
+# Command line: vivado.exe -log sumador_4bits.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sumador_4bits.tcl -notrace
+# Log file: D:/Google Drive/VIVADO/sumador_4bits/sumador_4bits.runs/impl_1/sumador_4bits.vdi
+# Journal file: D:/Google Drive/VIVADO/sumador_4bits/sumador_4bits.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sumador_4bits.tcl -notrace
