@@ -1,1 +1,0 @@
--wto "d31673222f624b9c9944e0124a78011f" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "decodificador_tb_behav" "xil_defaultlib.decodificador_tb" -log "elaborate.log" 

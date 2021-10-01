@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Circuito_logico.srcs/sources_1/new/diagrama.vhd" \
-
-# Do not sort compile order
-nosort
