@@ -1,0 +1,66 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use STD.TEXTIO.ALL;
+
+entity Memoria_RAM is
+
+		generic
+		(
+			DATA_WH : natural := 4;
+			 ADD_WH : natural := 4
+		);
+		
+		port
+		(
+			CLK	: in	STD_LOGIC;
+			 WR	: in	STD_LOGIC;
+			ADD	: in	STD_LOGIC_VECTOR( (ADD_WH) - 1 downto 0);
+		DATA_IN	: in	STD_LOGIC_VECTOR((DATA_WH) - 1 downto 0);
+		DATA_OUT	: out	STD_LOGIC_VECTOR((DATA_WH) - 1 downto 0)
+	
+	);
+
+end Memoria_RAM;
+
+architecture behavioral of Memoria_RAM is   
+
+subtype DATOS is STD_LOGIC_VECTOR((DATA_WH) - 1 downto 0);
+type RAM_TYPE is array (0 to (2**ADD_WH)-1) of DATOS;
+
+-- Inicializamos la memoria ROM en VHDL.
+
+
+-- signal ROM: ROM_TYPE := ( 	"1111", "1110", "1101", "1100",
+--									"1011", "1010", "1001", "1000",
+--									"0111", "0110", "0101", "0100",
+--									"0011", "0010", "0001", "0000"
+--								);  
+
+-- Inicializamos la memoria ROM con archivo .mif.
+
+signal RAM : RAM_TYPE;
+attribute ram_init_file : string;
+attribute ram_init_file of RAM : signal is "memoria.mif";
+
+begin
+
+	process(clk)
+	
+	begin
+		
+		if( (rising_edge(clk)) and (WR = '0')) then
+		
+			DATA_OUT <= RAM(conv_integer(ADD));
+			
+		elsif ( (rising_edge(clk)) and (WR = '1')) then
+		
+			RAM(conv_integer(ADD)) <= DATA_IN;
+			
+		end if;
+	
+	end process;
+	
+end behavioral;
