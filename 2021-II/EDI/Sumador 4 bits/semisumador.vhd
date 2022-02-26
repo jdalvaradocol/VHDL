@@ -17,7 +17,7 @@ end entity;
 architecture rtl of semisumador is
 begin
 
-	Ac_o <= A_i xor B_i;
-	S_o <= A_i and B_i;
+	Ac_o <= A_i and B_i;
+	S_o <= A_i xor B_i;
 
 end rtl;
