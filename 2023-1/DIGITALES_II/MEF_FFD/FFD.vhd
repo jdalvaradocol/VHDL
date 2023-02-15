@@ -13,15 +13,19 @@ end FFD;
 
 architecture Behavioral of FFD is
 
+signal Q : std_logic:= '0';	
+
 begin
 
 	FF_D: process(clk_i, D_i)
 	begin	
 		if rising_edge(clk_i) then
-			Q_o <= D_i;
+			Q <= D_i;
 		end if;
 	end process FF_D;
 
+Q_o <= Q;
+	
 end Behavioral;
 
 
