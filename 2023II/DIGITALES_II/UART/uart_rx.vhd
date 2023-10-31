@@ -26,7 +26,7 @@ use ieee.numeric_std.all;
 entity uart_rx is
 	generic(
 		DBIT      : integer :=     8; -- number data bits
-		CLK_FREQ  : integer := 125e6;  --frequency of system clock in Hertz
+		CLK_FREQ  : integer := 50e6;  --frequency of system clock in Hertz
 		BAUD_RATE : integer :=  9600 -- data link baud rate in bits/second
 	);
 	port(
@@ -41,7 +41,6 @@ architecture arch of uart_rx is
 
 type state_type is (idle, star, data);
 signal  state_reg  : state_type:=idle;
-
 signal  data_reg   : std_logic_vector(7 downto 0);
 signal  data_FA   : std_logic_vector(7 downto 0);
 signal  data_FB   : std_logic_vector(7 downto 0);
@@ -56,7 +55,7 @@ signal inicio : std_logic:= '0';
 
 begin
     
-    -- Se�ales de Baud_rate
+    -- Señales de Baud_rate
 	process(clk_i)
     begin
     
@@ -104,16 +103,18 @@ begin
                     data_reg <= rx_i & data_reg(7 downto 1);
                     count_bits <= count_bits + 1;
                 end if;
-                -- Se cargan los datos en la se�al de salida.
+                -- Se cargan los datos en la señal de salida.
                 if  count_bits = 8 then
-                    state_reg <= idle;
-                    data_FA  <= data_reg ;
-                    data_FB  <= data_FA ;
-                    data_FC  <= data_FB ;
-                    data_FD  <= data_FC ;
-                    dout_o  <= data_FA and data_FB and data_FC and data_FD;
+							state_reg <= idle;
+							data_FA  <= data_reg ;
+							data_FB  <= data_FA ;
+							data_FC  <= data_FB ;
+							data_FD  <= data_FC ;
+							dout_o  <= data_FA and data_FB and data_FC and data_FD;
                     
-                    -- dout_o <= data_reg ; -- Activar esta linea para cuando se envian datos diferentes.
+							count_os   <= 0;
+							count_bits <= 0;
+							--dout_o <= data_reg ; -- Activar esta linea para cuando se envian datos diferentes.
                     
                end if;
            else
