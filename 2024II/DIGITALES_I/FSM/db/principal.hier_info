@@ -1,0 +1,82 @@
+|principal
+clk_i => FFD:F1.clk_i
+clk_i => FFD:F2.clk_i
+x_i[0] => Equal0.IN0
+x_i[0] => Equal1.IN3
+x_i[0] => Equal2.IN1
+x_i[0] => Equal3.IN3
+x_i[0] => Equal4.IN1
+x_i[0] => Equal5.IN3
+x_i[0] => Equal6.IN2
+x_i[0] => Equal7.IN3
+x_i[0] => Equal8.IN1
+x_i[0] => Equal9.IN3
+x_i[0] => Equal10.IN2
+x_i[0] => Equal11.IN3
+x_i[0] => Equal12.IN2
+x_i[0] => Equal13.IN3
+x_i[0] => Equal14.IN3
+x_i[0] => Equal15.IN3
+x_i[0] => Equal16.IN0
+x_i[0] => Equal17.IN3
+x_i[0] => Equal18.IN1
+x_i[0] => Equal19.IN3
+x_i[0] => Equal20.IN1
+x_i[0] => Equal21.IN3
+x_i[0] => Equal22.IN2
+x_i[0] => Equal23.IN3
+x_i[0] => Equal24.IN1
+x_i[0] => Equal25.IN3
+x_i[0] => Equal26.IN2
+x_i[0] => Equal27.IN3
+x_i[0] => Equal28.IN2
+x_i[0] => Equal29.IN3
+x_i[0] => Equal30.IN3
+x_i[1] => Equal0.IN3
+x_i[1] => Equal1.IN0
+x_i[1] => Equal2.IN0
+x_i[1] => Equal3.IN2
+x_i[1] => Equal4.IN3
+x_i[1] => Equal5.IN1
+x_i[1] => Equal6.IN1
+x_i[1] => Equal7.IN2
+x_i[1] => Equal8.IN3
+x_i[1] => Equal9.IN1
+x_i[1] => Equal10.IN1
+x_i[1] => Equal11.IN2
+x_i[1] => Equal12.IN3
+x_i[1] => Equal13.IN2
+x_i[1] => Equal14.IN2
+x_i[1] => Equal15.IN2
+x_i[1] => Equal16.IN3
+x_i[1] => Equal17.IN0
+x_i[1] => Equal18.IN0
+x_i[1] => Equal19.IN2
+x_i[1] => Equal20.IN3
+x_i[1] => Equal21.IN1
+x_i[1] => Equal22.IN1
+x_i[1] => Equal23.IN2
+x_i[1] => Equal24.IN3
+x_i[1] => Equal25.IN1
+x_i[1] => Equal26.IN1
+x_i[1] => Equal27.IN2
+x_i[1] => Equal28.IN3
+x_i[1] => Equal29.IN2
+x_i[1] => Equal30.IN2
+A_o <= FFD:F1.Q_o
+B_o <= FFD:F2.Q_o
+Y_o <= FFD:F2.Q_o
+
+
+|principal|FFD:F1
+D_i => Q_o~reg0.DATAIN
+clk_i => Q_o~reg0.CLK
+Q_o <= Q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|principal|FFD:F2
+D_i => Q_o~reg0.DATAIN
+clk_i => Q_o~reg0.CLK
+Q_o <= Q_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
