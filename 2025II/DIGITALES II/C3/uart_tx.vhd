@@ -22,13 +22,14 @@ signal estado : mef_t := IDLE;
 
 begin
 
-	process(clk_baud_i, data_i, tx_i)
+	process(clk_baud_i, data_i, tx_i, reset_i)
 	
 	begin
 	
 		if reset_i = '0' then
 		
 			tx_o <= '1';
+			estado <= IDLE;
 			
 		elsif rising_edge(clk_baud_i) then
 

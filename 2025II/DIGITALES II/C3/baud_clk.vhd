@@ -30,8 +30,6 @@ signal counter : integer range 0 to DIVISOR_SAMPLE-1 := 0;
 -- counter en el rango de 0 a 15
 signal counter_sample : integer range 0 to OVERSAMPLE-1 := 0;
 
-
-
 begin
 
 	process(clk_i, reset_i)
