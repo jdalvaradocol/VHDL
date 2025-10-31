@@ -37,6 +37,7 @@ signal_x = signal_sin + signal_noise
 
 # Convolución discreta (Filtro mediana)
 
+
 signal_x_conv = convolucion_discreta(signal_x, filter_h)
 
 signal_x_conv = np.array(signal_x_conv) / len (filter_h)
